@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="gallery">
+        <a href="images/plant1.jpg"></a><img src="images/plant1.jpg" alt="Image 1" class="thumbnail"
+            onclick="openModal(0)">
+        <a href="images/plant2.jpg"></a><img src="images/plant2.jpg" alt="Image 2" class="thumbnail"
+            onclick="openModal(1)">
+        <a href="images/plant3.jpg"></a><img src="images/plant3.jpg" alt="Image 3" class="thumbnail"
+            onclick="openModal(2)">
+        <a href="images/plant4.jpg"></a><img src="images/plant4.jpg" alt="Image 4" class="thumbnail"
+            onclick="openModal(3)">
+        <a href="images/plant5.jpg"></a><img src="images/plant5.jpg" alt="Image 5" class="thumbnail"
+            onclick="openModal(4)">
+        <a href="images/plant6.jpg"></a><img src="images/plant6.jpg" alt="Image 6" class="thumbnail"
+            onclick="openModal(5)">
+        <a href="images/plant7.jpg"></a><img src="images/plant7.jpg" alt="Image 7" class="thumbnail"
+            onclick="openModal(6)">
+        <a href="images/plant8.jpg"></a><img src="images/plant8.jpg" alt="Image 8" class="thumbnail"
+            onclick="openModal(7)">
+        <a href="images/plant9.jpg"></a><img src="images/plant9.jpg" alt="Image 9" class="thumbnail"
+            onclick="openModal(8)">
+        <a href="images/plant10.jpg"></a><img src="images/plant10.jpg" alt="Image 10" class="thumbnail"
+            onclick="openModal(9)">
+        <a href="images/plant11.jpg"></a><img src="images/plant11.jpg" alt="Image 11" class="thumbnail"
+            onclick="openModal(10)">
+        <a href="images/plant12.jpg"></a><img src="images/plant12.jpg" alt="Image 12" class="thumbnail"
+            onclick="openModal(11)">
+    </div>
+
+    <!-- modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+        <img id="modalImage" class="modal-content" alt="Full Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
